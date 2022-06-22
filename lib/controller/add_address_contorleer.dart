@@ -53,7 +53,7 @@ Future<String> addAddress(
   }
   // List<profileemodel>profile=[];
   id=jsonDecode(response.body)['data']['id'];
-  print('aaaaaaabbbbbbbbbbbbbbbbbccccccccccccc $id');
+
 
   String message = jsonDecode(response.body)['message'];
   prefs.setString(keyAccessToken, token);

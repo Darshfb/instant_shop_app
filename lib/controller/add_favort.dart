@@ -39,7 +39,6 @@ Future<bool> addfavort(
         backgroundColor: Colors.red);
   }
   bool status = jsonDecode(response.body)['status'];
-  print('>>>>>>>>>>>>>>>>> $status');
 
   return status;
 }

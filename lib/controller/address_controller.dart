@@ -27,7 +27,6 @@ List<AdressModel>title=[];
 
       print(respone.statusCode);
       var responsebody2=jsonDecode(respone.body)['data']['data'];
-      print('sssssssssssssssssssss $responsebody2');
       for(int x=0;x<responsebody2.length;x++){
         title.add(AdressModel.fromMap(responsebody2[x]));
       }

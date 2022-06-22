@@ -84,9 +84,7 @@ class cartcontroller extends GetxController {
       print(respone.statusCode);
       var responsebody2 = jsonDecode(respone.body)['data']['cart_items'];
 
-      print('sssssssssssssssssssss $responsebody2');
 
-      print('a7a ynaaaaaaaaaas2${responsebody2}');
       for (int x = 0; x < responsebody2.length; x++) {
         cartit.add(cartiteme.fromMap(responsebody2[x]));
       }
@@ -146,6 +144,5 @@ Future<String> cartlength() async {
     cartit.add(cartiteme.fromMap(responsebody2[x]));
   }
 
-  print('afasfsaaf${totall.toString()}');
   return cartit.length.toString();
 }

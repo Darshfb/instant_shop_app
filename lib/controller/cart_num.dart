@@ -43,7 +43,6 @@ class cartnum extends GetxController{
       var responsebody2=jsonDecode(respone.body)['data']['cart_items'];
       print('sssssssssssssssssssss $responsebody2');
 
-      print('a7a ynaaaaaaaaaas2${responsebody2}');
       for(int x=0;x<responsebody2.length;x++){
         cartit.add(cartiteme.fromMap(responsebody2[x]));
         RxInt num=cartit.length.obs;
